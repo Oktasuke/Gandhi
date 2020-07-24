@@ -3,18 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		582600E224CAC41B0083F313 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582600E124CAC41B0083F313 /* AppDelegate.swift */; };
 		582600E424CAC41B0083F313 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582600E324CAC41B0083F313 /* SceneDelegate.swift */; };
-		582600E624CAC41B0083F313 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582600E524CAC41B0083F313 /* ContentView.swift */; };
+		582600E624CAC41B0083F313 /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582600E524CAC41B0083F313 /* AppView.swift */; };
 		582600E824CAC41C0083F313 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582600E724CAC41C0083F313 /* Assets.xcassets */; };
 		582600EB24CAC41C0083F313 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 582600EA24CAC41C0083F313 /* Preview Assets.xcassets */; };
 		582600EE24CAC41C0083F313 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 582600EC24CAC41C0083F313 /* LaunchScreen.storyboard */; };
 		582600F924CAC41C0083F313 /* GandhiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 582600F824CAC41C0083F313 /* GandhiTests.swift */; };
 		5826010424CAC41C0083F313 /* GandhiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826010324CAC41C0083F313 /* GandhiUITests.swift */; };
+		5826011324CAC72F0083F313 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 5826011224CAC72F0083F313 /* ComposableArchitecture */; };
+		5826011524CAC72F0083F313 /* ComposableCoreMotion in Frameworks */ = {isa = PBXBuildFile; productRef = 5826011424CAC72F0083F313 /* ComposableCoreMotion */; };
+		5826011724CAC72F0083F313 /* ComposableCoreLocation in Frameworks */ = {isa = PBXBuildFile; productRef = 5826011624CAC72F0083F313 /* ComposableCoreLocation */; };
+		5826011924CAC7A30083F313 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 5826011824CAC7A30083F313 /* README.md */; };
+		5826011C24CACB140083F313 /* HealthMonitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826011B24CACB140083F313 /* HealthMonitorView.swift */; };
+		5826011F24CACBF70083F313 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 5826011E24CACBF70083F313 /* SwiftUICharts */; };
+		5826012224CACF0A0083F313 /* AppCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826012124CACF0A0083F313 /* AppCore.swift */; };
+		5826012424CAD2940083F313 /* HealthMonitorCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826012324CAD2940083F313 /* HealthMonitorCore.swift */; };
+		5826012624CADC9F0083F313 /* HealthDatum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826012524CADC9F0083F313 /* HealthDatum.swift */; };
+		5826012924CB1B680083F313 /* HealthCheckCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826012824CB1B680083F313 /* HealthCheckCore.swift */; };
+		5826012B24CB1D8A0083F313 /* HealthCheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826012A24CB1D8A0083F313 /* HealthCheckView.swift */; };
+		5826012E24CB209C0083F313 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826012D24CB209C0083F313 /* SettingView.swift */; };
+		5826013024CB217C0083F313 /* SettingCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826012F24CB217C0083F313 /* SettingCore.swift */; };
+		5826013324CB2EBE0083F313 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 5826013224CB2EBE0083F313 /* QGrid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +52,7 @@
 		582600DE24CAC41B0083F313 /* Gandhi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gandhi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		582600E124CAC41B0083F313 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		582600E324CAC41B0083F313 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		582600E524CAC41B0083F313 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		582600E524CAC41B0083F313 /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		582600E724CAC41C0083F313 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		582600EA24CAC41C0083F313 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		582600ED24CAC41C0083F313 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +63,15 @@
 		582600FF24CAC41C0083F313 /* GandhiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GandhiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5826010324CAC41C0083F313 /* GandhiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GandhiUITests.swift; sourceTree = "<group>"; };
 		5826010524CAC41C0083F313 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5826011824CAC7A30083F313 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		5826011B24CACB140083F313 /* HealthMonitorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMonitorView.swift; sourceTree = "<group>"; };
+		5826012124CACF0A0083F313 /* AppCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCore.swift; sourceTree = "<group>"; };
+		5826012324CAD2940083F313 /* HealthMonitorCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthMonitorCore.swift; sourceTree = "<group>"; };
+		5826012524CADC9F0083F313 /* HealthDatum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDatum.swift; sourceTree = "<group>"; };
+		5826012824CB1B680083F313 /* HealthCheckCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCheckCore.swift; sourceTree = "<group>"; };
+		5826012A24CB1D8A0083F313 /* HealthCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCheckView.swift; sourceTree = "<group>"; };
+		5826012D24CB209C0083F313 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		5826012F24CB217C0083F313 /* SettingCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +79,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5826013324CB2EBE0083F313 /* QGrid in Frameworks */,
+				5826011724CAC72F0083F313 /* ComposableCoreLocation in Frameworks */,
+				5826011F24CACBF70083F313 /* SwiftUICharts in Frameworks */,
+				5826011524CAC72F0083F313 /* ComposableCoreMotion in Frameworks */,
+				5826011324CAC72F0083F313 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +107,7 @@
 		582600D524CAC41B0083F313 = {
 			isa = PBXGroup;
 			children = (
+				5826011824CAC7A30083F313 /* README.md */,
 				582600E024CAC41B0083F313 /* Gandhi */,
 				582600F724CAC41C0083F313 /* GandhiTests */,
 				5826010224CAC41C0083F313 /* GandhiUITests */,
@@ -99,9 +128,12 @@
 		582600E024CAC41B0083F313 /* Gandhi */ = {
 			isa = PBXGroup;
 			children = (
+				5826011A24CACA530083F313 /* HealthMonitor */,
+				5826012724CB1AFD0083F313 /* HealthCheck */,
+				5826012C24CB205A0083F313 /* Setting */,
+				5826012024CACE820083F313 /* Core */,
 				582600E124CAC41B0083F313 /* AppDelegate.swift */,
 				582600E324CAC41B0083F313 /* SceneDelegate.swift */,
-				582600E524CAC41B0083F313 /* ContentView.swift */,
 				582600E724CAC41C0083F313 /* Assets.xcassets */,
 				582600EC24CAC41C0083F313 /* LaunchScreen.storyboard */,
 				582600EF24CAC41C0083F313 /* Info.plist */,
@@ -136,6 +168,43 @@
 			path = GandhiUITests;
 			sourceTree = "<group>";
 		};
+		5826011A24CACA530083F313 /* HealthMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				5826011B24CACB140083F313 /* HealthMonitorView.swift */,
+				5826012324CAD2940083F313 /* HealthMonitorCore.swift */,
+				5826012524CADC9F0083F313 /* HealthDatum.swift */,
+			);
+			path = HealthMonitor;
+			sourceTree = "<group>";
+		};
+		5826012024CACE820083F313 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				582600E524CAC41B0083F313 /* AppView.swift */,
+				5826012124CACF0A0083F313 /* AppCore.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		5826012724CB1AFD0083F313 /* HealthCheck */ = {
+			isa = PBXGroup;
+			children = (
+				5826012824CB1B680083F313 /* HealthCheckCore.swift */,
+				5826012A24CB1D8A0083F313 /* HealthCheckView.swift */,
+			);
+			path = HealthCheck;
+			sourceTree = "<group>";
+		};
+		5826012C24CB205A0083F313 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				5826012D24CB209C0083F313 /* SettingView.swift */,
+				5826012F24CB217C0083F313 /* SettingCore.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,6 +221,13 @@
 			dependencies = (
 			);
 			name = Gandhi;
+			packageProductDependencies = (
+				5826011224CAC72F0083F313 /* ComposableArchitecture */,
+				5826011424CAC72F0083F313 /* ComposableCoreMotion */,
+				5826011624CAC72F0083F313 /* ComposableCoreLocation */,
+				5826011E24CACBF70083F313 /* SwiftUICharts */,
+				5826013224CB2EBE0083F313 /* QGrid */,
+			);
 			productName = Gandhi;
 			productReference = 582600DE24CAC41B0083F313 /* Gandhi.app */;
 			productType = "com.apple.product-type.application";
@@ -224,6 +300,11 @@
 				Base,
 			);
 			mainGroup = 582600D524CAC41B0083F313;
+			packageReferences = (
+				5826011124CAC72F0083F313 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+				5826011D24CACBF70083F313 /* XCRemoteSwiftPackageReference "ChartView" */,
+				5826013124CB2EBE0083F313 /* XCRemoteSwiftPackageReference "QGrid" */,
+			);
 			productRefGroup = 582600DF24CAC41B0083F313 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -242,6 +323,7 @@
 			files = (
 				582600EE24CAC41C0083F313 /* LaunchScreen.storyboard in Resources */,
 				582600EB24CAC41C0083F313 /* Preview Assets.xcassets in Resources */,
+				5826011924CAC7A30083F313 /* README.md in Resources */,
 				582600E824CAC41C0083F313 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,8 +350,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				582600E224CAC41B0083F313 /* AppDelegate.swift in Sources */,
+				5826012E24CB209C0083F313 /* SettingView.swift in Sources */,
+				5826012624CADC9F0083F313 /* HealthDatum.swift in Sources */,
+				5826012424CAD2940083F313 /* HealthMonitorCore.swift in Sources */,
+				5826012B24CB1D8A0083F313 /* HealthCheckView.swift in Sources */,
 				582600E424CAC41B0083F313 /* SceneDelegate.swift in Sources */,
-				582600E624CAC41B0083F313 /* ContentView.swift in Sources */,
+				5826013024CB217C0083F313 /* SettingCore.swift in Sources */,
+				582600E624CAC41B0083F313 /* AppView.swift in Sources */,
+				5826012924CB1B680083F313 /* HealthCheckCore.swift in Sources */,
+				5826011C24CACB140083F313 /* HealthMonitorView.swift in Sources */,
+				5826012224CACF0A0083F313 /* AppCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -588,6 +678,61 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5826011124CAC72F0083F313 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.6.0;
+			};
+		};
+		5826011D24CACBF70083F313 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.5.3;
+			};
+		};
+		5826013124CB2EBE0083F313 /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5826011224CAC72F0083F313 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5826011124CAC72F0083F313 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		5826011424CAC72F0083F313 /* ComposableCoreMotion */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5826011124CAC72F0083F313 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableCoreMotion;
+		};
+		5826011624CAC72F0083F313 /* ComposableCoreLocation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5826011124CAC72F0083F313 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableCoreLocation;
+		};
+		5826011E24CACBF70083F313 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5826011D24CACBF70083F313 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		5826013224CB2EBE0083F313 /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5826013124CB2EBE0083F313 /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 582600D624CAC41B0083F313 /* Project object */;
 }
