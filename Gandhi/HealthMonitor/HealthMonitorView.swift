@@ -18,17 +18,14 @@ struct HealthMonitorView: View {
     let store: Store<HealthMonitorState, HealthMonitorAction>
     var body: some View {
         NavigationView {
-            VStack(alignment: .center, spacing: CGFloat(0)){
-                HStack {
-                    BarChartView(data: ChartData(points: [8,23,54,32,12,37,7,23,43]), title: "Title", style: Styles.barChartStyleOrangeLight, form: ChartForm.medium)
-                    VStack {
-                        BarChartView(data: ChartData(points: [8,23,54,32,12,37,7,23,43]), title: "Title", style: Styles.barChartStyleOrangeLight, form: ChartForm.small)
-                        BarChartView(data: ChartData(points: [8,23,54,32,12,37,7,23,43]), title: "Title", style: Styles.barChartStyleOrangeLight, form: ChartForm.small)
-                    }
+            WithViewStore(self.store) { viewStore in
+                QGrid(viewStore.healthData,
+                      columns: 2,
+                      columnsInLandscape: 4) { healthDatum in
+                        BarChartView(data: ChartData(points: healthDatum.points), title: "Title", legend: "Legendary")
                 }
-                LineView(data: [8,23,54,32,12,37,7,23,43], title: "Line chart", legend: "Full screen").padding()
             }
-            .navigationBarTitle("SwiftUI", displayMode: .inline)
+        .navigationBarTitle("アクティビティ")
         }
     }
 }
@@ -37,7 +34,12 @@ struct HealthMonitorView_Previews: PreviewProvider {
     static var previews: some View {
         HealthMonitorView(
             store: Store<HealthMonitorState, HealthMonitorAction>(
-                initialState: .init(),
+                initialState: HealthMonitorState(healthData:
+                    [
+                        HealthDatum(id: 1, type: .sleepingTime, points: [23,4,124,5,324,5,463,45,363]),
+                        HealthDatum(id: 2, type: .steps, points: [23214,14124,123412,23123,2131, 88990])
+                    ]
+                ),
                 reducer: healthMonitorReducer,
                 environment: HealthMonitorEnvironment()
             )

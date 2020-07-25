@@ -10,7 +10,10 @@ import Foundation
 import ComposableArchitecture
 
 struct HealthMonitorState: Equatable {
-    public init() {}
+    let healthData: [HealthDatum]
+    public init(healthData: [HealthDatum]) {
+        self.healthData = healthData
+    }
 }
 
 indirect enum HealthMonitorAction: Equatable {

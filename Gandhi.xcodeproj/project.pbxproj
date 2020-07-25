@@ -29,6 +29,8 @@
 		5826012E24CB209C0083F313 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826012D24CB209C0083F313 /* SettingView.swift */; };
 		5826013024CB217C0083F313 /* SettingCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826012F24CB217C0083F313 /* SettingCore.swift */; };
 		5826013324CB2EBE0083F313 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 5826013224CB2EBE0083F313 /* QGrid */; };
+		5826013624CBC2FF0083F313 /* BarChartRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826013524CBC2FF0083F313 /* BarChartRowView.swift */; };
+		5826013824CBC6370083F313 /* HealthDataCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5826013724CBC6370083F313 /* HealthDataCore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +74,8 @@
 		5826012A24CB1D8A0083F313 /* HealthCheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthCheckView.swift; sourceTree = "<group>"; };
 		5826012D24CB209C0083F313 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		5826012F24CB217C0083F313 /* SettingCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingCore.swift; sourceTree = "<group>"; };
+		5826013524CBC2FF0083F313 /* BarChartRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarChartRowView.swift; sourceTree = "<group>"; };
+		5826013724CBC6370083F313 /* HealthDataCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HealthDataCore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,8 +175,10 @@
 		5826011A24CACA530083F313 /* HealthMonitor */ = {
 			isa = PBXGroup;
 			children = (
+				5826013424CBC2D90083F313 /* views */,
 				5826011B24CACB140083F313 /* HealthMonitorView.swift */,
 				5826012324CAD2940083F313 /* HealthMonitorCore.swift */,
+				5826013724CBC6370083F313 /* HealthDataCore.swift */,
 				5826012524CADC9F0083F313 /* HealthDatum.swift */,
 			);
 			path = HealthMonitor;
@@ -203,6 +209,14 @@
 				5826012F24CB217C0083F313 /* SettingCore.swift */,
 			);
 			path = Setting;
+			sourceTree = "<group>";
+		};
+		5826013424CBC2D90083F313 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				5826013524CBC2FF0083F313 /* BarChartRowView.swift */,
+			);
+			path = views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -349,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5826013824CBC6370083F313 /* HealthDataCore.swift in Sources */,
 				582600E224CAC41B0083F313 /* AppDelegate.swift in Sources */,
 				5826012E24CB209C0083F313 /* SettingView.swift in Sources */,
 				5826012624CADC9F0083F313 /* HealthDatum.swift in Sources */,
@@ -359,6 +374,7 @@
 				582600E624CAC41B0083F313 /* AppView.swift in Sources */,
 				5826012924CB1B680083F313 /* HealthCheckCore.swift in Sources */,
 				5826011C24CACB140083F313 /* HealthMonitorView.swift in Sources */,
+				5826013624CBC2FF0083F313 /* BarChartRowView.swift in Sources */,
 				5826012224CACF0A0083F313 /* AppCore.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
