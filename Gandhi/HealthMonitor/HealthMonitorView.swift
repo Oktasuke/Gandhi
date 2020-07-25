@@ -17,23 +17,15 @@ struct HealthMonitorView: View {
     }
     let store: Store<HealthMonitorState, HealthMonitorAction>
     var body: some View {
-        WithViewStore(self.store) { viewStore in
-            List(viewStore.healthData) { healthDatum in
-                Text(healthDatum.type.label)
-                BarChartView(data: ChartData(points: healthDatum.points), title: "Title", legend: "Legendary")
+        NavigationView {
+            WithViewStore(self.store) { viewStore in
+                QGrid(viewStore.healthData,
+                      columns: 2,
+                      columnsInLandscape: 4) { healthDatum in
+                        BarChartView(data: ChartData(points: healthDatum.points), title: "Title", legend: "Legendary")
+                }
             }
-        }
-    }
-}
-
-
-struct Cell: View {
-    var data: HealthDatum
-    var body: some View {
-        HStack {
-            VStack(alignment: .center) {
-                Text(self.data.type.label)
-            }
+        .navigationBarTitle("アクティビティ")
         }
     }
 }

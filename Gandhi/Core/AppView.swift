@@ -30,7 +30,11 @@ struct AppView: View {
                                 HealthDatum(id: 3, type: .sleepingTime, points: [23,4,124,5,324,5,463,45,363]),
                                 HealthDatum(id: 4, type: .steps, points: [23214,14124,123412,23123,2131, 88990]),
                                 HealthDatum(id: 5, type: .sleepingTime, points: [23,4,124,5,324,5,463,45,363]),
-                                HealthDatum(id: 6, type: .steps, points: [23214,14124,123412,23123,2131, 88990])
+                                HealthDatum(id: 6, type: .steps, points: [23214,14124,123412,23123,2131, 88990]),
+                                HealthDatum(id: 7, type: .sleepingTime, points: [23,4,124,5,324,5,463,45,363]),
+                                HealthDatum(id: 8, type: .steps, points: [23214,14124,123412,23123,2131, 88990]),
+                                HealthDatum(id: 9, type: .sleepingTime, points: [23,4,124,5,324,5,463,45,363]),
+                                HealthDatum(id: 10, type: .steps, points: [23214,14124,123412,23123,2131, 88990]),
                             ]
                         ),
                         reducer: healthMonitorReducer,
