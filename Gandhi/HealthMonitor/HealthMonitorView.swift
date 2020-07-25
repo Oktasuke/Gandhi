@@ -17,18 +17,23 @@ struct HealthMonitorView: View {
     }
     let store: Store<HealthMonitorState, HealthMonitorAction>
     var body: some View {
-        NavigationView {
-            VStack(alignment: .center, spacing: CGFloat(0)){
-                HStack {
-                    BarChartView(data: ChartData(points: [8,23,54,32,12,37,7,23,43]), title: "Title", style: Styles.barChartStyleOrangeLight, form: ChartForm.medium)
-                    VStack {
-                        BarChartView(data: ChartData(points: [8,23,54,32,12,37,7,23,43]), title: "Title", style: Styles.barChartStyleOrangeLight, form: ChartForm.small)
-                        BarChartView(data: ChartData(points: [8,23,54,32,12,37,7,23,43]), title: "Title", style: Styles.barChartStyleOrangeLight, form: ChartForm.small)
-                    }
-                }
-                LineView(data: [8,23,54,32,12,37,7,23,43], title: "Line chart", legend: "Full screen").padding()
+        WithViewStore(self.store) { viewStore in
+            List(viewStore.healthData) { healthDatum in
+                Text(healthDatum.type.label)
+                BarChartView(data: ChartData(points: healthDatum.points), title: "Title", legend: "Legendary")
             }
-            .navigationBarTitle("SwiftUI", displayMode: .inline)
+        }
+    }
+}
+
+
+struct Cell: View {
+    var data: HealthDatum
+    var body: some View {
+        HStack {
+            VStack(alignment: .center) {
+                Text(self.data.type.label)
+            }
         }
     }
 }
@@ -37,7 +42,12 @@ struct HealthMonitorView_Previews: PreviewProvider {
     static var previews: some View {
         HealthMonitorView(
             store: Store<HealthMonitorState, HealthMonitorAction>(
-                initialState: .init(),
+                initialState: HealthMonitorState(healthData:
+                    [
+                        HealthDatum(id: 1, type: .sleepingTime, points: [23,4,124,5,324,5,463,45,363]),
+                        HealthDatum(id: 2, type: .steps, points: [23214,14124,123412,23123,2131, 88990])
+                    ]
+                ),
                 reducer: healthMonitorReducer,
                 environment: HealthMonitorEnvironment()
             )
